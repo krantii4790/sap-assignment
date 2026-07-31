@@ -1,0 +1,75 @@
+*&---------------------------------------------------------------------*
+*& Report Y182R001_ASSIGNMENTS1
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT y182r001_assignments1.
+
+*Print the All/Even/Odd numbers from a series of numbers.
+*Input Parameter: Take from and to number
+*Radio button : All, Even, Odd
+*
+*Validation : ‘From’ number should be <  ‘To’ Number
+*
+*Logic:  Generate Numbers as per input given in range of ‘from’ and ‘to’.
+*
+*Output  : Print numbers as per the radio button.
+
+DATA: gv_num1 TYPE i.
+
+SELECTION-SCREEN BEGIN OF BLOCK b1 WITH FRAME TITLE TEXT-001.
+  PARAMETERS: p_num1 TYPE i,
+              p_num2 TYPE i.
+SELECTION-SCREEN END OF BLOCK b1.
+
+SELECTION-SCREEN BEGIN OF BLOCK b2 WITH FRAME TITLE TEXT-002.
+  SELECTION-SCREEN BEGIN OF LINE.
+    PARAMETERS: rb_all RADIOBUTTON GROUP g1 USER-COMMAND ucl DEFAULT 'X'.
+    SELECTION-SCREEN COMMENT (08) TEXT-001.
+    PARAMETERS: rb_even RADIOBUTTON GROUP g1.
+    SELECTION-SCREEN COMMENT (08) TEXT-002.
+    PARAMETERS: rb_odd RADIOBUTTON GROUP g1.
+    SELECTION-SCREEN COMMENT (08) TEXT-003.
+  SELECTION-SCREEN END OF LINE.
+
+SELECTION-SCREEN END OF BLOCK b2.
+
+* ADD VAlidation of the Correct User Input
+AT SELECTION-SCREEN.
+
+  IF p_num1 >= p_num2.
+    MESSAGE 'Give the First Number Less Than Second Number' TYPE 'E' DISPLAY LIKE 'I'.
+  ENDIF.
+*END SELECTION-SCREEN.
+
+START-OF-SELECTION.
+  DO.
+
+    IF p_num1 > p_num2.
+      EXIT.
+    ENDIF.
+
+    IF rb_all = 'X'.
+      WRITE: / p_num1.
+
+    ELSEIF rb_even = 'X'.
+
+      IF p_num1 MOD 2 = 0.
+        WRITE: / p_num1.
+      ENDIF.
+
+    ELSEIF rb_odd = 'X'.
+
+      IF p_num1 MOD 2 <> 0.
+        WRITE: / p_num1.
+      ENDIF.
+
+    ENDIF.
+
+    p_num1 = p_num1 + 1.
+
+  ENDDO.
+
+
+*ENDIF.
+END-OF-SELECTION.

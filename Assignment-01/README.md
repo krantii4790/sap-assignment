@@ -212,13 +212,13 @@ After completing this assignment, I learned:
 
 ### 📊 Output - Even Numbers
 
-![Even Numbers](OUTPUT_EVEN.png)
+![Even Numbers](OUTPUT_ODD.png)
 
 ---
 
 ### 📊 Output - Odd Numbers
 
-![Odd Numbers](OUTPUT_ODD.png)
+![Odd Numbers](OUTPUT_EVEN.png)
 
 ---
 

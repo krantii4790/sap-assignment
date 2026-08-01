@@ -155,7 +155,7 @@ After completing this assignment, I learned:
 ### 📝 Input Screen
 
 <p align="center">
-  <img src="OUTPUT_INPUT.png" width="700">
+  <img src="INPUT.png" width="700">
 </p>
 
 ---

@@ -1,0 +1,35 @@
+*&---------------------------------------------------------------------*
+*& Report Y182R005_ASSIGNMENTS05
+*&---------------------------------------------------------------------*
+*&
+*&---------------------------------------------------------------------*
+REPORT Y182R005_ASSIGNMENTS05.
+
+DATA: gv_num1 TYPE n LENGTH 4,
+      gv_num2 TYPE n LENGTH 4,
+      gv_yer TYPE n LENGTH 4.
+
+
+PARAMETERS: P_NUM1 type c LENGTH 4,
+            P_NUM2 type c LENGTH 4.
+
+AT SELECTION-SCREEN OUTPUT.
+
+AT SELECTION-SCREEN.
+  gv_num1 = p_num1.
+  gv_num2 = p_num2.
+  gv_yer = gv_num2 - gv_num1.
+  IF  gv_yer > 40.
+    MESSAGE 'Give The YEAR GAP Between 40 or Less' type 'E' DISPLAY LIKE 'I'.
+  ENDIF.
+
+START-OF-SELECTION.
+WHILE gv_num1 < gv_num2.
+IF gv_num1 MOD 4 = 0 AND gv_num1 MOD 100 NE 0 OR gv_num1 MOD 400 = 0.
+  WRITE: / gv_num1.
+
+ENDIF.
+gv_num1 = gv_num1 + 1.
+ENDWHILE.
+
+END-OF-SELECTION.

@@ -198,4 +198,4 @@ Uploading one assignment every day to maintain consistency and improve ABAP prog
 
 ### Happy Learning!
 
-**SAP ABAP | SAP S/4HANA | Classical Reports | GitHub Portfolio**
+**SAP ABAP | SAP S/4HANA**

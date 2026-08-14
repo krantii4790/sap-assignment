@@ -180,9 +180,9 @@ Assignment-07/
 │
 ├── Assignment07.abap
 ├── README.md
-├── INPUT.png
-├── OUTPUT_PRIME.png
-└── OUTPUT_NOT_PRIME.png
+├── OUTPUT_USERINPUR.png
+├── OUTPUT1.png
+└── OUTPUT2.png
 ```
 
 ---
@@ -206,7 +206,7 @@ After completing this assignment, I learned:
 ### 📝 User Input
 
 <p align="center">
-  <img src="INPUT.png" width="700">
+  <img src="OUTPUT_USERINPUR.png" width="700">
 </p>
 
 ---
@@ -214,7 +214,7 @@ After completing this assignment, I learned:
 ### 🟢 Prime Number Output
 
 <p align="center">
-  <img src="OUTPUT_PRIME.png" width="700">
+  <img src="OUTPUT1.png" width="700">
 </p>
 
 ---
@@ -222,7 +222,7 @@ After completing this assignment, I learned:
 ### 🔴 Not Prime Number Output
 
 <p align="center">
-  <img src="OUTPUT_NOT_PRIME.png" width="700">
+  <img src="OUTPUT2.png" width="700">
 </p>
 
 ---

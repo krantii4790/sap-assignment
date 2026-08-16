@@ -209,7 +209,7 @@ After completing this assignment, I learned:
 ### 📝 User Input
 
 <p align="center">
-  <img src="INPUT.png" width="700">
+  <img src="input.png" width="700">
 </p>
 
 ---
@@ -217,7 +217,7 @@ After completing this assignment, I learned:
 ### 🟢 Armstrong Number Output
 
 <p align="center">
-  <img src="OUTPUT_ARMSTRONG.png" width="700">
+  <img src="OUTPUT1.png" width="700">
 </p>
 
 ---
@@ -225,7 +225,7 @@ After completing this assignment, I learned:
 ### 🔴 Not Armstrong Number Output
 
 <p align="center">
-  <img src="OUTPUT_NOT_ARMSTRONG.png" width="700">
+  <img src="OUTPUT2.png" width="700">
 </p>
 
 ---

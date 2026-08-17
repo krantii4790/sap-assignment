@@ -122,7 +122,7 @@ Assignment-08/
 ├── Assignment08.abap
 ├── README.md
 ├── INPUT.png
-└── OUTPUT_RESULT.png
+└── OUTPUT.png
 ```
 
 ---
@@ -153,7 +153,7 @@ After completing this assignment, I learned:
 ### 📊 Factorial Output
 
 <p align="center">
-  <img src="OUTPUT_RESULT.png" width="700">
+  <img src="OUTPUT.png" width="700">
 </p>
 
 ---

@@ -228,9 +228,8 @@ Assignment-12/
 ├── README.md
 ├── USERINPUT.png
 ├── OUTPUT_SUM.png
-├── OUTPUT_AVERAGE.png
-├── OUTPUT_PRODUCT.png
-└── OUTPUT_VALIDATION.png
+├── OUTPUT_AVERAGE.png 
+└── OUTPUT_PRODUCT.png
 ```
 
 ---
@@ -279,14 +278,6 @@ After completing this assignment, I learned:
 
 <p align="center">
   <img src="OUTPUT_PRODUCT.png" width="700">
-</p>
-
----
-
-### ⚠️ Validation Output
-
-<p align="center">
-  <img src="OUTPUT_VALIDATION.png" width="700">
 </p>
 
 ---
